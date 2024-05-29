@@ -47,3 +47,14 @@ npx tailwindcss -i input.css -o output.css --watch
 </body>
 </html>
 ```
+# Add Video from website
+main>home_sticky>header>container>hero>mobile_link>video w-embed>video>sourcevideo/mp4
+```
+<!-- 
+Inspect:
+main>home_sticky>header>container>hero>mobile_link>video w-embed>video>sourcevideo/mp4 
+-->
+
+<!-- significo-main-hero.mp4 -->
+<source src="https://cdn.significo.com/videos/significo-main-hero.mp4" type="video/mp4">
+```
