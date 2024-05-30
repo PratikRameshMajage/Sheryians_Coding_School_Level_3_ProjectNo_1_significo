@@ -1,0 +1,30 @@
+body[theme="black"]{
+    background-color: #000;
+}
+body[theme="black"] .section{
+    color: #fff;
+}
+body[theme="white"]{
+    background-color: #fff;
+}
+body[theme="white"] .section{
+    color: #000;
+}
+body[theme="green"]{
+    background-color: #4bda52;
+}
+body[theme="green"] .section{
+    color: #163217;
+}
+body[theme="salmon"]{
+    background-color: salmon;
+}
+body[theme="salmon"] .section{
+    color: rgb(51, 13, 9);
+}
+body[theme="cyan"]{
+    background-color: #39b8c3;
+}
+body[theme="cyan"] .section{
+    color: #15494e;
+}
