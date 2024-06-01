@@ -632,8 +632,24 @@ video {
   top: 7%;
 }
 
+.bottom-\[7\%\] {
+  bottom: 7%;
+}
+
+.left-\[\] {
+  left: ;
+}
+
+.left-\[5\%\] {
+  left: 5%;
+}
+
 .z-\[3\] {
   z-index: 3;
+}
+
+.z-\[4\] {
+  z-index: 4;
 }
 
 .block {
@@ -715,6 +731,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .border-collapse {
