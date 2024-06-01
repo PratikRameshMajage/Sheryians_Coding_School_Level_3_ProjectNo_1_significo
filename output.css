@@ -604,6 +604,10 @@ video {
   position: relative;
 }
 
+.bottom-\[7\%\] {
+  bottom: 7%;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -614,6 +618,10 @@ video {
 
 .left-1\/2 {
   left: 50%;
+}
+
+.left-\[5\%\] {
+  left: 5%;
 }
 
 .top-0 {
@@ -630,18 +638,6 @@ video {
 
 .top-\[7\%\] {
   top: 7%;
-}
-
-.bottom-\[7\%\] {
-  bottom: 7%;
-}
-
-.left-\[\] {
-  left: ;
-}
-
-.left-\[5\%\] {
-  left: 5%;
 }
 
 .z-\[3\] {
@@ -688,6 +684,18 @@ video {
   height: 100vh;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
 .w-52 {
   width: 13rem;
 }
@@ -731,18 +739,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-48 {
-  width: 12rem;
 }
 
 .border-collapse {
@@ -877,6 +873,11 @@ video {
 .bg-zinc-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .py-2 {
