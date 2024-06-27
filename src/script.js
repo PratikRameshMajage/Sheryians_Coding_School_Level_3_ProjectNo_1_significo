@@ -66,11 +66,11 @@ function teamAminmation(){
      })
 }
 
-var clutter = "";
+function textpara(){
+    var clutter = "";
 document.querySelector(".textpara")
 .textContent.split("")
 .forEach(function(e){
-    // if(e === " ") clutter += `<span>&nbsp;</span>`
     clutter += `<span class="opacity-10">${e}</span>`
 })
 document.querySelector(".textpara").innerHTML = clutter;
@@ -89,7 +89,9 @@ gsap.to(".textpara span", {
     duration: 2,
     ease: Power4
 })
+}
 
 homePageAnimation();
 realPageAnimation();
-teamAminmation()
+teamAminmation();
+textpara();
