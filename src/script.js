@@ -31,7 +31,7 @@ function homePageAnimation(){
     }, 'b')
 }
 
-function realpageanimation(){
+function realPageAnimation(){
     gsap.to(".slide", {
         scrollTrigger: {
             trigger: ".real",
@@ -45,8 +45,51 @@ function realpageanimation(){
     })
 }
 
+function teamAminmation(){
+    document.querySelectorAll(".listelem").forEach(function(el){
+        el.addEventListener("mousemove", function(dets){
+            
+            gsap.to(this.querySelector(".picture"), {
+                opacity: 1,
+                x: gsap.utils.mapRange(0, window.innerWidth, -200, 200, dets.clientX),
+                power: 4,
+                duration: .5,
+            })
+        })
+        el.addEventListener("mouseleave", function(dets){
+            gsap.to(this.querySelector(".picture"), {
+                opacity: 0,
+                power: 4,
+                duration: .5,
+            })
+        })
+     })
+}
+
+var clutter = "";
+document.querySelector(".textpara")
+.textContent.split("")
+.forEach(function(e){
+    // if(e === " ") clutter += `<span>&nbsp;</span>`
+    clutter += `<span class="opacity-10">${e}</span>`
+})
+document.querySelector(".textpara").innerHTML = clutter;
+
+gsap.set(".textpara span", {opacity: .1})
+gsap.to(".textpara span", {
+    scrollTrigger: {
+        trigger: ".para",
+        start: "top -70%",
+        end: "bottom -10%",
+        scrub: .2,
+        markers: true,
+    },
+    opacity: 1,
+    stagger: .03,
+    duration: 2,
+    ease: Power4
+})
+
 homePageAnimation();
-realpageanimation();
-
-
- 
+realPageAnimation();
+teamAminmation()
