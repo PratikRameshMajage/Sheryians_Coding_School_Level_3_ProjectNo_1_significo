@@ -30,16 +30,23 @@ function homePageAnimation(){
         ease: Power4, 
     }, 'b')
 }
+
+function realpageanimation(){
+    gsap.to(".slide", {
+        scrollTrigger: {
+            trigger: ".real",
+            start: "top top",
+            end: "bottom bottom",
+            // markers: true,
+            scrub: 1,
+        },
+        xPercent: -200,
+        ease: Power4
+    })
+}
+
 homePageAnimation();
+realpageanimation();
 
 
-gsap.to("slide", {
-    scrollTrigger: {
-        trigger: ".slides",
-        start: "top top",
-        end: "bottom bottom",
-        markers: true,
-    },
-    xPercent: -200,
-    ease:Power4
-})
+ 
