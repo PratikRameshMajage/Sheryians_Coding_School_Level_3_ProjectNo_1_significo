@@ -82,7 +82,7 @@ gsap.to(".textpara span", {
         start: "top 30%",
         end: "bottom 100%",
         scrub: .2,
-        markers: true,
+        // markers: true,
         // pin: true,
     },
     opacity: 1,
@@ -92,7 +92,14 @@ gsap.to(".textpara span", {
 })
 }
 
+function loco(){
+    (function () {
+        const locomotiveScroll = new LocomotiveScroll();
+    })();    
+}
+
 homePageAnimation();
 realPageAnimation();
 teamAminmation();
 textpara();
+loco();
