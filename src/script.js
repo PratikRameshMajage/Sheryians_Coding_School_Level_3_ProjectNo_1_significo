@@ -82,7 +82,7 @@ gsap.to(".textpara span", {
         start: "top 30%",
         end: "bottom 100%",
         scrub: 1,
-        markers: true,
+        // markers: true,
         // pin: true,
     },
     opacity: 1,
@@ -112,9 +112,29 @@ function capsulesAnimation(){
     })
 }
 
+
+function changeColor(){
+    document.querySelectorAll(".section")
+    .forEach(function(e){
+        ScrollTrigger.create({
+            trigger: e,
+            start: "top 100%",
+            end: "bottom 100%",
+            onEnter: function(){
+                document.body.setAttribute("theme", e.dataset.color);
+            },
+            onEnterBack: function(){
+                document.body.setAttribute("theme", e.dataset.color);
+            }
+        })
+    })
+}
+
+
 homePageAnimation();
 realPageAnimation();
 teamAminmation();
 textpara();
 loco();
 capsulesAnimation();
+changeColor();

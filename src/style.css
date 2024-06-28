@@ -7,11 +7,14 @@
     --dcyan : #1f2f32;
     --green : #4bda52;
     --dgreen : #163217;
-
 }
 
 .vdodiv{
     clip-path: circle(var(--clip) at 50% 50%);
+}
+
+body{
+    transition: background-color ease-out .5s;
 }
 
 *::selection{
