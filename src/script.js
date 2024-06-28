@@ -67,7 +67,7 @@ function teamAminmation(){
 }
 
 function textpara(){
-    var clutter = "";
+var clutter = "";
 document.querySelector(".textpara")
 .textContent.split("")
 .forEach(function(e){
@@ -79,10 +79,11 @@ gsap.set(".textpara span", {opacity: .1})
 gsap.to(".textpara span", {
     scrollTrigger: {
         trigger: ".para",
-        start: "top -70%",
-        end: "bottom -10%",
+        start: "top 30%",
+        end: "bottom 100%",
         scrub: .2,
         markers: true,
+        // pin: true,
     },
     opacity: 1,
     stagger: .03,
