@@ -81,12 +81,12 @@ gsap.to(".textpara span", {
         trigger: ".para",
         start: "top 30%",
         end: "bottom 100%",
-        scrub: .2,
-        // markers: true,
+        scrub: 1,
+        markers: true,
         // pin: true,
     },
     opacity: 1,
-    stagger: .03,
+    stagger: .05,
     duration: 2,
     ease: Power4
 })
@@ -98,8 +98,23 @@ function loco(){
     })();    
 }
 
+function capsulesAnimation(){
+    gsap.set(".capsule", {translateY: 30})
+    gsap.to(".capsule", {
+        scrollTrigger: {
+            trigger: ".capsules",
+            start: "top 50%",
+            end: "bottom 80%",
+            scrub: 1,
+        },
+        y: -30,
+        ease: Power4,
+    })
+}
+
 homePageAnimation();
 realPageAnimation();
 teamAminmation();
 textpara();
 loco();
+capsulesAnimation();
